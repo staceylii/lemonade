@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luis' Lemonade</title>
+  
+
+    <!-- Bootstrap -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+   <!-- Font Awesome -->
+   <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+   <!-- Animate CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+   <!-- CSS File-->
+   <link rel="stylesheet" type="text/css" href="style.css">
+   
+   <!--Google Font-->
+   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+   <!--Google Icons-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- JS -->
+    <div id="instafeed"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+   <script> 
+   $(document).ready(function(){
+    $("#buttonLemon").click(function(){
+        $("#firstLemon").animate({bottom: '350px', opacity: 0.0}, "slow");
+        $("#secondLemon").animate({ opacity: 1.0}, "slow");
+    });
+    });
+
+   $(document).ready(function(){
+    $("#buttonBerry").click(function(){
+        $("#firstBerry").animate({bottom: '350px', opacity: 0.0}, "slow");
+        $("#secondBerry").animate({ opacity: 1.0}, "slow");
+    });
+    });
+
+   $(document).ready(function(){
+    $("#buttonPassionFruit").click(function(){
+        $("#firstPassionFruit").animate({bottom: '350px', opacity: 0.0}, "slow");
+        $("#secondPassionFruit").animate({ opacity: 1.0}, "slow");
+    });
+    });
+
+   $(document).ready(function(){
+    $("#xButtonLemon").click(function(){
+        $("#firstLemon").animate({top: '0px', opacity: 1.0}, "slow");
+        $("#secondLemon").animate({ opacity: 0.0}, "fast");
+    });
+    });
+
+   $(document).ready(function(){
+    $("#xButtonBerry").click(function(){
+        $("#firstBerry").animate({top: '0px', opacity: 1.0}, "slow");
+        $("#secondBerry").animate({ opacity: 0.0}, "fast");
+    });
+    });
+
+   $(document).ready(function(){
+    $("#xButtonPassionFruit").click(function(){
+        $("#firstPassionFruit").animate({top: '0px', opacity: 1.0}, "slow");
+        $("#secondPassionFruit").animate({ opacity: 0.0}, "fast");
+    });
+    });
+</script>  
+
+  </head>
+
+  <body>
+ 
+
+<!--Nav Bar-->
+  <nav id="navbar" class="navbar navbar-fixed-top">
+    
+    <a href="luis-lemonade-home.html" class="navbar-brand" id="logo" ><img src="https://imageshack.com/a/img923/6965/a2jwoH.png" width="100px" height="auto" alt="Luis Lemonade Logo"></a>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-left" id="navbarLinks">
+        <li><a href="#productPrev">PRODUCTS</a></li>
+        <li><a href="luis-lemonade-aboutus.html">OUR STORY</a></li>
+        <li><a href="luis-lemonade-gallery.html">GALLERY</a></li>
+        <li><a href="luis-lemonade-contactpage.html">CONTACT US</a></li>
+      </ul>
+      <a href="luis-lemonade-mappage.html"><button class="btn navbar-btn navbar-right">WHERE TO BUY</button></a>
+    </div>
+
+  </nav>
+  <!-- Nav Bar Ends -->
+  
+
+  <!--Header-->
+  <div id="header" class="header">
+    <div class="container">
+        <div class="col-lg-6 col-md-6" id="x">
+          <h2 id="motto">When Life Gives You Lemons...</h2>
+        </div> 
+        <div class="col-lg-12 col-md-12">
+          <i class="fas fa-angle-down" id="downArrow"></i>
+        </div>
+      </div>
+  </div>
+  <!-- End of Header -->
+  
+  <!--fruitAbout-->
+  <div class="fruitAbout" id="fruitAbout">
+    <div class="container">
+
+      <div class="col-lg-12 col-md-12" id="title">
+        <h2>MEET OUR FAMILY OF LEMONADES</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-4" id="f1">          
+          <div class="first" id="firstLemon">
+            <h3 id="initialtext">Classic<br>Lemon</h3>
+            <button class="btn" id="buttonLemon">LEARN MORE</button>
+          </div>
+
+          <div class="second" id="secondLemon">
+            <h3>Classic Lemon</h3>
+            <ul style="list-style-type:none">
+              <li>Lemons are used for both culinary and non-culinary purposes throughout the world. It is most commonly known for being used in juices!</li>
+              <li>Source of: Vitamin C, Vitamin A, and Vitamin B5</li>
+            </ul>
+            <button class="xbutton" id="xButtonLemon">BACK</button>
+          </div>       
+        </div>
+
+        <div class="col-lg-4 col-md-4" id="f2">          
+          <div class="first" id="firstBerry">
+            <h3 id="initialtext">Acai<br>Berry</h3>
+            <button class="btn" id="buttonBerry">LEARN MORE</button>
+          </div>
+          <div class="second" id="secondBerry">
+            <h3>Acai Berry</h3>
+            <ul style="list-style-type:none">
+              <li><bold>Acai berries are small, round, and black-purple. They resemble grapes!</bold></li>
+              <li><bold>Source of: Amino Acids (which help promote muscle performance), energy, endurance and strength.</bold></li>
+            </ul>
+            <button class="xbutton" id="xButtonBerry">BACK</button>
+          </div>
+       
+        </div>
+
+        <div class="col-lg-4 col-md-4" id="f3">          
+          <div class="first" id="firstPassionFruit">
+            <h3 id="initialtext">Passion<br>Fruit</h3>
+            <button class="btn" id="buttonPassionFruit">LEARN MORE</button>
+          </div>
+          <div class="second" id="secondPassionFruit">
+            <h3>Passion Fruit</h3>
+            <ul style="list-style-type:none">
+              <li>Passion fruits have a juicy edible center composed of a large number of seeds. They can be red, yellow, purple, or green in color.</li>
+              <li>Source of: Vitamin A and Vitamin C</li>
+            </ul>
+            <button class="xbutton" id="xButtonPassionFruit">BACK</button>
+          </div>
+       
+        </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>    
+          
+
+  <!--Product Preview Begins-->
+  <div class="productPrev" id="productPrev">
+    <div class="container">
+      <div class="col-lg-12 col-md-12" id="title">
+        <h2>PRODUCTS</h2>
+      </div>
+      
+      
+      
+      <div class="col-lg-12 col-md-12" id="llp">
+        <div class="productPics">
+          <div class="col-lg-4 col-md-4" id="first">
+            <img src="https://imageshack.com/a/img923/3383/3q255l.jpg" alt="llp3" height="25%" width="100%">
+            <p>The original flavor that started it all. This simple but delicious recipe won over beachgoers at Coney Island. Naturally refreshing with only the slightest hint of mint. Juiced with only the best locally grown lemons.</p>
+            <hr>
+            <p>Ingredients: Filtered water, real lemon juice, mint, cane sugar</p>
+          </div>
+          
+          <div class="col-lg-4 col-md-4" id="first">
+            <img src="https://imageshack.com/a/img924/9673/A3fdsz.jpg" alt="llp1" height="25%" width="100%">
+            <p>Imagine the original lemonade but supercharged with acai berry. Cool refreshing and totally delicious. A drink to be enjoyed all-year long. Juiced with only the best locally grown lemons.</p>
+            <hr>
+            <p>Ingredients: Filtered water, real lemon juice, mint, cane sugar, acai berry juice</p>
+          </div>
+          <div class="col-lg-4 col-md-4" id="first">
+            <img src="https://imageshack.com/a/img922/4333/d4Pf9i.jpg" alt="llp2" height="25%" width="100%">
+            <p>This most refreshing and unbeatable combination of passion fruit and Luis’ Lemonade is a great thirst quencher. Juiced with only the best locally grown lemons.</p>
+            <hr>
+            <p>Ingredients: Filtered water, real lemon juice, mint, cane sugar, passion fruit juice</p>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+  </div>
+  <!--Products Ends-->
+
+  <!--Find Store-->
+  <div class="findstore" id="findstore">
+    <div class="container">
+        <div id="box"> 
+          <h2>OUR LEMONADE IS ALL OVER NYC</h2>
+          <a href="luis-lemonade-mappage.html"><button class="btn">FIND YOUR NEAREST LOCATION</button></a>
+
+        </div>
+        
+    </div>
+  </div>
+  <!--Store Finder Ends-->
+
+  <!--Footer Begins-->
+  <div id="footer" class="footer">
+    <div class="container">
+      <br>
+      <div class="row">
+        <div class="col-lg-3 col-md-3">
+          <a href="luis-lemonade-home.html" class="navbar-brand" id="logo" ><img src="https://imagizer.imageshack.com/v2/320x240q90/922/QjzYI3.png" width="200px" height="auto" alt="Luis Lemonade Logo"></a>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <p id="title">Links</p>
+          <a href="luis-lemonade-aboutus.html">Our Story</a><br>
+          <a href="#productPrev">Products</a><br>
+          <a href="luis-lemonade-gallery.html">Gallery</a><br>
+          <a href="luis-lemonade-contactpage.html">Contact Us</a><br>
+          <a href="luis-lemonade-faqs.html">FAQs</a><br>
+          <a href="luis-lemonade-privacypolicy.html">Privacy Policy</a><br>
+          
+          
+          
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <p id="title">Contact Us</p>
+          <p>P.O. Box 10098, New York, New York 10001</i></p>
+          <p>lemonade.luis@gmail.com</i></p>
+          <p> tel. (512) 689-2203</p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <p id="title">Social Media</p>
+          <a target="_blank" href="https://www.facebook.com/LemonadeLuis/"><i class="fa fa-facebook-square"></i> LemonadeLuis</a><br>
+          <a target="_blank" href="https://www.instagram.com/lemonade.luis/?hl=en"><i class="social fa fa-instagram" aria-hidden="true"></i> lemonade.luis</a>
+          <br><p id="title">Languages</p>
+          <a href="luis-lemonade-home-Espanol.html">Espanol</a><br>
+        </div>      
+      </div>
+
+    </div>
+      
+  </div>
+  <!--Footer Ends-->
+
+
+</body>
+</html>

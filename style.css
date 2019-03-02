@@ -1,0 +1,673 @@
+.body{
+  padding-top: 75px;
+}
+
+/*To be used across all pages*/
+
+h1, h2, h3{
+ font-family: 'Montserrat', sans-serif;
+ text-shadow: 2px 2px white;
+}
+.container{
+  outline: 2px dashed #ededed
+  width: 100%;
+}
+
+/*NavBar*/
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  opacity: 0.95;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  padding-right: 5%;
+  height:75px;
+  border-bottom: 1px solid #d8d6d6;
+}
+
+.navbar img{
+  margin-top: -15%;
+  opacity: 1;
+}
+
+.navbar button{
+  color: black;
+  background-color: #f7e51d;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  margin-top: 11px;
+  border: none;
+  height: 50px;
+  box-shadow: 0 3px #eaeaea;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+
+.navbar button:hover{
+ transform: scale(1.1);
+}
+
+.navbar a{ 
+  color:#444444;
+  opacity: 0.7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+#navbarLinks{
+ margin-top: 10px;
+}
+
+/*Nav Bar Ends*/
+
+/*Footer*/
+.footer a,p{
+ color: grey;
+}
+.footer #title{
+font-weight: 500;
+font-size: 20px;
+color: black;
+}
+
+
+.footer .container{
+ height: 200px;
+ border-top: 1px solid #d8d6d6;
+}
+/*Footer Ends*/
+
+/*Elements to be used across all pages ends*/
+
+
+/*Home Page*/
+/*Header*/
+.header .container{
+  height: 588px;
+  margin-top: 75px;
+  /*background-image: url("https://imageshack.com/a/img924/811/uNoOd1.jpg");*/
+  background-image: url("https://imageshack.com/a/img924/5182/g8eAPx.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width:100%;
+}
+
+
+.header #x{
+ /*border: 10px solid white;*/
+ border-radius: 3px;
+ height: 480px;
+ width: 38%;
+ margin-top: 59px;
+ margin-left: 6%;
+}
+.header h2{
+  /*color: #f7e51d;*/
+  color: #ffff28;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 115px;
+  padding-top: 4%;
+  text-shadow: 6px 6px black;
+}
+.header p{
+  /*color: #f7e51d;*/
+  color: white;
+  font-family: 'Montserrat', cursive;
+  text-align: center;
+  font-size: 40px;
+}
+
+.header #downArrow{
+ font-size: 100px;
+ color: yellow;
+ text-align: center;
+ margin-left: 48%;
+ margin-top: -20px;
+}
+
+#ul
+{
+ text-align: left;
+}
+
+/*Product Preview Begins*/
+
+.productPrev .container{
+ width: 100%;
+}
+.productPrev h2{
+ text-align: center;
+}
+
+.productPrev p{
+ text-align: center;
+ color: black;
+}
+
+
+
+
+
+
+
+
+
+.productPrev #llp{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+}
+
+
+
+
+
+
+
+
+.productPics{
+ width: 75%;
+ margin-left: 12.5%;
+}
+
+.productPics button{
+ margin-left:30%;
+ margin-top: 20px;
+}
+
+/*Product Preview Ends*/
+
+
+/*Fruit About*/
+.fruitAbout{
+ font-family: 'Montserrat', sans-serif;
+
+}
+.fruitAbout p{
+ color: white;
+ text-align: center;
+ font-size: 20px;
+ font-weight: 3;
+}
+.fruitAbout li{
+ font-weight:750;
+ outline: black;
+}
+.fruitAbout .container {
+  height: 400px;
+  width: 100%;
+}
+
+.fruitAbout #title{
+ width: 100%;
+ height: 75px;
+ z-index: 2;
+ margin-top: -15px;
+}
+
+.fruitAbout h2{
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 23px;
+}
+
+.fruitAbout .first {
+  border: 7px solid white;
+  border-radius: 3px;
+  width: 80%;
+  height: 244px;
+  z-index: 1;
+  position: absolute;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 6.5%;
+  text-align: center;
+  opacity: 1;
+  transition: 0.0s;
+  /*transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  */
+}
+
+.fruitAbout .first h3{
+ color: white;
+ font-size: 50px;
+}
+.fruitAbout .first button{
+ background-color: white;
+ color:black;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 15px;
+ text-align: center;
+ height: 20%;
+ width: 43%;
+ margin-top: 5%;
+ transition: 0.5s;
+ opacity: 1;
+}
+
+.fruitAbout .first button:hover {
+    /*box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);*/
+    transform: scale(1.1);
+}
+
+.fruitAbout .second{
+ border: 7px solid white;
+ border-radius: 3px;
+ width: 80%;
+ height: 244px;
+ z-index: 0;
+ opacity: 0;
+ position: absolute;
+ margin-top: 40px;
+ padding-bottom: 40px;
+ margin-left: 6.5%;
+ text-align: center;
+ transition: .5s ease;
+}
+
+.fruitAbout .second h3{
+ color: white;
+ font-size: 37px;
+}
+
+.fruitAbout .second ul{
+ color: white;
+ font-size: 15px;
+}
+
+.fruitAbout .xbutton{
+ color:black;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 17px;
+ text-align: center;
+ border-radius: 3px;
+ height: 30px;
+ width: 38%;
+ background-color: white;
+ transition: 0.5s;
+}
+
+.fruitAbout .second .xbutton:hover {
+    
+    transform: scale(1.1);
+}
+
+.fruitAbout .w3-button{
+ z-index: -1;
+ 
+ height: 20px;
+ width: 20px;
+}
+.fruitAbout i{
+ height: 20px;
+ width: 20px;
+}
+
+#f1{
+  background-image: url("https://imageshack.com/a/img922/8783/iySBWr.jpg");
+  height: 325px;
+  width: 33.33%;
+ }
+#f2{
+  background-image: url("https://imageshack.com/a/img922/9707/Gya8ZE.jpg");
+  height: 325px;
+  width: 33.33%;
+}
+#f3{
+  background-image: url("https://imageshack.com/a/img923/7743/2kLnHW.jpg");
+  height: 325px;
+  width: 33.33%;
+}
+
+/*Find Store section on Home Page*/
+.findstore .container{
+ background-image: url("https://imageshack.com/a/img923/961/yxe0H0.jpg");
+ opacity: .8;
+ height: 620px;
+ width: 100%;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+.findstore h2{
+ color: white;
+ font-family: 'Montserrat', sans-serif;
+ text-align: center;
+ font-size: 50px;
+ font-weight: 600;
+ text-shadow: 2px 2px #c6c6c6;
+ margin-top: 8%;
+}
+.findstore button{
+ color:black;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 20px;
+ text-align: center;
+ margin-top: 60px;
+ margin-left: 31%;
+ height: 75px;
+ width: 38%;
+ background-color: white;
+ transition: 0.5s;
+}
+
+
+.findstore button:hover {
+    
+    transform: scale(1.2);
+}
+
+.findstore #box{
+ border: 10px solid white;
+ border-radius: 3px;
+ height: 350px;
+ width:75%;
+ margin-top: 135px;
+ margin-left: 12.5%;
+}
+/*Find Store Section on Homepage Ends*/
+/*Home Page Ends
+
+
+/*Map Page*/
+.storeLocator .container{
+ height: 588px;
+ margin-top: 76px;
+ font-family: 'Montserrat', sans-serif;
+ width: 100%;
+}
+
+#locationList{
+ overflow: auto;
+ height: 587px;
+}
+#locationList .title{
+ font-size: 30px;
+}
+#locationList .name{
+ color: #f7e51d;
+ font-size: 40px;
+ font-weight: 700;
+
+}
+
+#locationList .location{
+ border-top: 1px solid #d8d6d6;
+}
+
+#map {
+  height: 587px;;
+  margin: 0;
+}
+/*Map Page Ends*/
+
+
+
+/*Products*/
+.products .container{
+ height: 587px;
+ margin-top: 76px;
+ font-family: 'Montserrat', sans-serif;
+}
+/*Product Ends*/
+
+/*Gallery Page*/
+
+.gallery .container{
+ margin-top: 75px;
+ font-family: 'Montserrat', sans-serif;
+ width: 100%;
+
+}
+
+/*Gallery Page Ends*/
+
+
+
+/*Privacy Policy*/
+#privacyPolicy
+{
+   margin-top: 75px;
+}
+
+.privacyPolicy .container {
+    background-color: #ffffb3;
+}
+
+.privacyPolicy h1{
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: serif;
+}
+
+.privacyPolicy h2{
+    font-weight:bold;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.privacyPolicy h3{
+    text-align: inherit;
+    font-style:italic;
+    font-family: inherit;
+    font-size: medium;
+}
+/*Privacy Policy Ends*/
+
+/*FAQ*/
+#faqs
+{
+   margin-top: 75px;
+}
+
+.faqs .container {
+    background-color: #ffffb3;
+}
+
+.faqs h1{
+    color: black;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: serif;
+}
+
+.faqs h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 28px;
+}
+
+.faqs h3{
+    text-align: inherit;
+    font-style:italic;
+    font-family: inherit;
+    font-size: 19px;
+}
+/*FAQ Ends*/
+
+/*Contact Us Page*/
+
+.contactpage .top .container{
+ background-image: url("http://www.khkalexandria.org/wp-content/uploads/2016/03/lemons-table.jpg");
+ opacity: .8;
+ height: 175px;
+ width: 100%;
+ margin-top: 75px;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+.contactpage .bottom .container{
+ height: 588px;
+ margin-top: 65px;
+ font-family: 'Montserrat', sans-serif;
+ width: 100%;
+ padding-top: 6px;
+}
+
+.contactpage .bottom input[type=text], select, textarea {
+ width: 100%;
+ padding: 12px;
+ border: 1px solid #ccc;
+ border-radius: 3px;
+ resize: vertical;
+}
+
+.contactpage .bottom input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+
+.contactpage .bottom input[type=submit]:hover {
+ background-color: #45a049;
+ padding-bottom: 3px;
+}
+
+.contactpage .bottom #colONE {
+ margin-left: 5%;
+ border-radius: 5px;
+ background-color: #f2f2f2;
+ width: 50%;
+ margin-bottom: 40px;
+ height: ;
+}
+.contactpage .top .container h2{
+ color: #f7e51d;
+ text-align: center;
+ font-size: 50px;
+ padding-top: 25px;
+ text-shadow: 2px 2px black;
+}
+
+.contactpage .top .container p{
+ color:white;
+ text-align: center;
+ font-size: 20px;
+ 
+ text-shadow: 2px 2px black;
+}
+
+.contactpage form{
+ height: 450px;
+}
+.contactpage #text {
+ width: 100%;
+}
+
+.contactpage .bottom .tbox {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+}
+
+.contactpage .bottom{
+ margin-top: 30px;
+}
+.contactpage .bottom #colTWO{
+ float: right;
+ color: black;
+}
+
+
+
+
+
+/*About Us Page*/
+
+.aboutus .container{
+ width: 100%;
+ margin-top: 75px;
+}
+
+.aboutus .top{
+ background-image: url("https://imageshack.com/a/img922/194/JugVvn.jpg");
+ height: 210px;
+ width: 100%;
+ background-repeat: no-repeat;
+ background-size: cover;
+ text-align: center;
+ font-size: 50px;
+ color: #f7e51d;
+ font-family: 'Montserrat', sans-serif;
+}
+
+.aboutus .top .container h2{
+ color: #f7e51d;
+ text-align: center;
+ font-size: 50px;
+ padding-top: 25px;
+ text-shadow: 2px 2px black;
+}
+.aboutus .top .container p{
+ color: white;
+ text-align: center;
+ font-size: 20px;
+}
+.aboutus .bottom{
+ margin-top: 30px;
+}
+
+.aboutus .bottom img{
+ height: auto;
+ width: 100%;
+}
+
+.aboutus .bottom #colONE{
+ padding-left: 6%;
+}
+
+.aboutus .bottom #colONE p{
+ text-indent: 40px;
+ font-size: 18px;
+}
+
+
+/*About Us Page ends*/
+
+/*About Us Page*/
+.aboutus .top .container {
+ height: 175px;
+ margin-top: 75px;
+ font-family: 'Montserrat', sans-serif;
+ /*background-image: url(https://i.pinimg.com/originals/20/b8/94/20b89443a0f713de24f26b2630241ded.jpg)*/
+ background-repeat: no-repeat;
+ opacity: .8;
+}
+
+.aboutus .top .container h2{
+ color: #f7e51d;
+ text-align: center;
+ font-size: 50px;
+}
+.aboutus p{
+ color: black;
+ opacity: 1;
+ font-family: 'Montserrat', sans-serif;
+}
+
+.aboutus .bottom .container{
+ padding-bottom: 30px;
+}
+/*About Us Page Ends*/

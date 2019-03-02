@@ -1,0 +1,213 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luis' Lemonade</title>
+
+    <!-- Bootstrap -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+   <!-- Font Awesome -->
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+   <!-- Animate CSS -->
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+   <!-- CSS File-->
+   <link rel="stylesheet" type="text/css" href="style.css">
+   
+   <!--Google Font-->
+   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+   <!-- JS -->
+    <div id="instafeed"></div>
+  <script src="path/to/instafeed.min.js"></script>
+  
+  <link rel="icon" href="https://imagizer.imageshack.com/v2/320x240q90/922/QjzYI3.png">
+  </head>
+
+  <body>
+ 
+   <!--Nav Bar-->
+  <nav id="navbar" class="navbar navbar-fixed-top">
+    
+    <a href="luis-lemonade-home.html" class="navbar-brand" id="logo" ><img src="https://imagizer.imageshack.com/v2/320x240q90/922/QjzYI3.png" width="100px" height="auto" alt="Luis Lemonade Logo"></a>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-left" id="navbarLinks">
+        <li><a href="luis-lemonade-home.html">PRODUCTS</a></li>
+        <li><a href="luis-lemonade-aboutus.html">OUR STORY</a></li>
+        <li><a href="luis-lemonade-gallery.html">GALLERY</a></li>
+        <li><a href="luis-lemonade-contactpage.html">CONTACT US</a></li>
+      </ul>
+      <a href="luis-lemonade-mappage.html"><button class="btn navbar-btn navbar-right">WHERE TO BUY</button></a>
+    </div>
+
+  </nav>
+  <!-- Nav Bar Ends -->
+  
+  <!--Store Locator-->
+  <div class="storeLocator">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4" id="locationList">
+            <div class="title">
+              <h2>Locations</h2>
+            </div>
+            <div class="location">
+              <p class="name">Cozy Corner</p>
+              <p class="address">1161 2nd Avenue<br>New York, NY 10065</p>
+            </div>
+            <div class="location">
+              <p class="name">The Corner Store</p>
+              <p class="address">W 72nd St<br>New York, NY 10023</p>
+            </div>
+            <div class="location">
+              <p class="name">Ideal Convenience Store</p>
+              <p class="address">1326 Lexington Ave<br>New York, NY 10128</p>
+            </div>
+            <div class="location">
+              <p class="name">7-Eleven</p>
+              <p class="address">1239 2nd Ave<br>New York, NY 10065</p>
+            </div>
+            <div class="location">
+              <p class="name">Corner News & Grocery</p>
+              <p class="address">618 8th Ave #2<br>New York, NY 10018</p>
+            </div>
+            <div class="location">
+              <p class="name">Baba Convenience Store</p>
+              <p class="address">1585 2nd Ave<br>New York, NY 10028</p>
+            </div>
+            <div class="location">
+              <p class="name">Duane Reade</p>
+              <p class="address">598 Broadway<br>New York, NY 10012</p>
+            </div>
+            <div class="location">
+              <p class="name">Infinity News</p>
+              <p class="address">837 Lexington Ave<br>New York, NY 10065</p>
+            </div>
+            <div class="location">
+              <p class="name">Brothers Candy & Grocery</p>
+              <p class="address">542 E 14th St # 1<br>New York, NY 10009</p>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-8" id="map">
+          </div>
+            <script>
+              function initMap() {
+              var uluru =  {lat: 40.720610, lng: -73.975};
+             
+              var map = new google.maps.Map(document.getElementById('map'), 
+              {
+              zoom: 12,
+              center: uluru
+              });
+              
+              var marker = new google.maps.Marker({
+              position: uluru,
+              map: map,
+              });
+              
+              var lat = {lat: 40.730610, lng: -73.975242};
+              var marker1 = new google.maps.Marker({
+              position: lat,
+              map: map,
+              });
+              
+              var lat1 = {lat: 40.785091, lng:  -73.968285};
+              var marker2 = new google.maps.Marker({
+              position: lat1,
+              map: map,
+              });
+              
+              var lat2 = {lat: 40.753091, lng:  -73.97461};
+              var marker3 = new google.maps.Marker({
+              position: lat2,
+              map: map,
+              });
+              
+              var lat3 = {lat: 40.783091, lng:  -73.97561};
+              var marker4 = new google.maps.Marker({
+              position: lat3,
+              map: map,
+              });
+              
+              var lat4 = {lat: 40.715076, lng: -73.991180};
+              var marker5 = new google.maps.Marker({
+              position: lat4,
+              map: map,
+              });
+              
+              var lat5 = {lat: 40.725076, lng: -73.991190};
+              var marker6 = new google.maps.Marker({
+              position: lat5,
+              map: map,
+              });
+              
+              var lat6 = {lat: 40.735076, lng: -73.991180};
+              var marker7 = new google.maps.Marker({
+              position: lat6,
+              map: map,
+              });
+              
+              var lat7 = {lat: 40.672482, lng: -73.968208};
+              var marker8 = new google.maps.Marker({
+              position: lat7,
+              map: map,
+              });
+              
+              
+              
+              }
+            </script>
+            <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPx5AVEgIvwzKTLqKWaZPPtW7_K2IvEbg&callback=initMap">
+            </script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Store Finder Ends-->
+
+<!--Footer Begins-->
+  <div id="footer" class="footer">
+    <div class="container">
+      <br>
+      <div class="row">
+        <div class="col-lg-3 col-md-3">
+          <a href="luis-lemonade-home.html" class="navbar-brand" id="logo" ><img src="https://imagizer.imageshack.com/v2/320x240q90/922/QjzYI3.png" width="200px" height="auto" alt="Luis Lemonade Logo"></a>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <p id="title">Links</p>
+          <a href="luis-lemonade-aboutus.html">Our Story</a><br>
+          <a href="luis-lemonade-home.html">Products</a><br>
+          <a href="luis-lemonade-gallery.html">Gallery</a><br>
+          <a href="luis-lemonade-contactpage.html">Contact Us</a><br>
+          <a href="luis-lemonade-faqs.html">FAQs</a><br>
+          <a href="luis-lemonade-privacypolicy.html">Privacy Policy</a><br>
+          
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <p id="title">Contact Us</p>
+          <p>P.O. Box 10098, New York, New York 10001</i></p>
+          <p>lemonade.luis@gmail.com</i></p>
+          <p> tel. (512) 689-2203</p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <p id="title">Social Media</p>
+          <a target="_blank" href="https://www.facebook.com/LemonadeLuis/"><i class="fa fa-facebook-square"></i> LemonadeLuis</a><br>
+          <a target="_blank" href="https://www.instagram.com/lemonade.luis/?hl=en"><i class="social fa fa-instagram" aria-hidden="true"></i> lemonade.luis</a>
+        </div>      
+      </div>
+
+    </div>
+      
+  </div>
+  <!--Footer Ends-->
+
+
+</body>
+</html>
